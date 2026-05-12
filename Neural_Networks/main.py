@@ -9,18 +9,18 @@ from neural_network import NeuralNetwork, generate_offspring
 import random
 import numpy as np
 
-ALIVE_REWARD = 1
+ALIVE_REWARD = 0.5  # IMPROVED: Reduced to shift focus to coin collection
 AI_COUNT = 50
 AI_VISION = False
-COIN_REWARD = 10  # IMPROVED: Increased from 2 to incentivize coin collection
-COINS_COUNT = 5
+COIN_REWARD = 30  # IMPROVED: Increased from 10 to heavily incentivize coin collection
+COINS_COUNT = 8  # IMPROVED: Increased from 5 to provide more collecting opportunities
 COMPLETE_REWARD = 500  # IMPROVED: Reduced from 1000 to avoid score capping
 FPS = 30
-GAME_FRAME_LENGTH = 2000  # IMPROVED: Increased from 1000 to allow more gameplay
+GAME_FRAME_LENGTH = 3000  # IMPROVED: Increased from 2000 to allow more time for coin collection
 NOISE_RATIO = 500
 SCREEN_DELTA = 15
 SEED = 1
-TOTAL_GENERATIONS = 15
+TOTAL_GENERATIONS = 25  # IMPROVED: Increased from 15 for better evolution
 WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 675
 ZAPPER_COUNT = 2
